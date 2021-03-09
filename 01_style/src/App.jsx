@@ -2,6 +2,9 @@ import { useState, useCallback, useMemo } from "react";
 import "./App.css";
 import { ChildArea } from "./ChildArea";
 import { CssModules } from "./components/CssModules";
+import { StyledJsx } from "./components/StyledJsx";
+import { StyledComponents } from "./components/StyledComponents";
+import { Emotion } from "./components/Emotion";
 
 export function App() {
   console.log("App");
@@ -34,6 +37,9 @@ export function App() {
         <button onClick={onClickOpen}>表示</button>
         <ChildArea open={open} onClickClose={onClickClose} />
         <CssModules />
+        <StyledJsx />
+        <StyledComponents />
+        <Emotion />
       </div>
     </>
   );
