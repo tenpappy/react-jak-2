@@ -13,10 +13,10 @@ export const Router = () => {
       </Route>
       <Route
         path="/page1"
-        // render={({ match: { url } }) => (
-        render={(props) => (
+        render={({ match: { url } }) => (
+          // render={(props) => (
           <Switch>
-            {console.log(props)}
+            {/* {console.log(props)} */}
             {page1Routes.map((route) => (
               <Route
                 key={route.path}
